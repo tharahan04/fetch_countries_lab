@@ -32,18 +32,18 @@ const fetchCountriesData = async () => {
     populateCountryList(filteredCountries);
   };
   
-  // Set up the app
-  const setUp = async () => {
-    const countriesData = await fetchCountriesData();
-    populateCountryList(countriesData);
+//   // Set up the app
+//   const setUp = async () => {
+//     const countriesData = await fetchCountriesData();
+//     populateCountryList(countriesData);
   
-    const filterForm = document.getElementById("filter-form");
-    filterForm.addEventListener("submit", function(event) {
-      event.preventDefault();
-      const filterInput = document.getElementById("filter-input").value.toLowerCase();
-      filterCountries(filterInput, countriesData);
-    });
-  };
+//     const filterForm = document.getElementById("filter-form");
+//     filterForm.addEventListener("submit", function(event) {
+//       event.preventDefault();
+//       const filterInput = document.getElementById("filter-input").value.toLowerCase();
+//       filterCountries(filterInput, countriesData);
+//     });
+//   };
   
   // Call the setUp function when the page loads
   window.addEventListener("load", setUp);
